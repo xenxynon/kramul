@@ -11,5 +11,6 @@ task:
       memory: 32G
 
   Build_script:
+      - sudo pacman -S ccache
       - git clone --depth=1 -b 4.19-rebase https://github.com/projects-nexus/android_kernel_lavender-4.19 lv && cd lv
       - bash build.sh --azure
