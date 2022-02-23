@@ -1,0 +1,15 @@
+env:
+    token: "ENCRYPTED[4c835ba91115dcdca93463678d8ef3bf8b2f741a72acf6e038b341dca4ca76eedca6b611947e623dcf251448cff049d1]"
+    chat_id: "ENCRYPTED[9edb2aae69df938d569c91bcc992b8b3ad3570cbb2fdb861c9d9bb160f8f546b8115c06cb869b7f1bc2c49348adcacb8]"
+    
+task:
+  name: "Kernel deploy.."
+  timeout_in: 2h
+  container:
+      image: ubuntu:devel
+      cpu: 8
+      memory: 32G
+
+  Build_script:
+      - git clone --depth=1 -b 4.19-rebase https://github.com/projects-nexus/android_kernel_lavender-4.19 lv && cd lv
+      - bash build.sh --azure
