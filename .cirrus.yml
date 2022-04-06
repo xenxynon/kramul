@@ -1,7 +1,6 @@
 env:
-    token: "ENCRYPTED[91aa86249a2b8217c4416fd0688d5f96bd0f1c00043f546a4c588cc41f1e1e9233082dbd36ac2f5624e3843ff1136e63]"
-    chat_id: "ENCRYPTED[271123886e84714e0f103ef02e04c0e8f59d20e429fb1c0f118b20bf88b4a98f966b095e487c0ba21ceb314215d0b060]"
-    
+    token: "5172715354:AAGpEs0NkY9ALIa4G964q70hPcETXsxEEB"
+    chat_id: "-1001749428852"
 task:
   name: "Kernel deploy.."
   timeout_in: 2h
@@ -11,5 +10,5 @@ task:
       memory: 32G
 
   Build_script:
-      - git clone --depth=1 -b 4.19-rebase https://github.com/projects-nexus/android_kernel_lavender-4.19 lv && cd lv
-      - bash build.sh --azure
+      - git clone --depth=1 -b 4.19-rebase https://github.com/xenxynon/kernel_xiaomi_sdm660-4.19 lv && cd lv
+      - bash .circle/build
