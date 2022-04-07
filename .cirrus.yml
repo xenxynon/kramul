@@ -11,4 +11,4 @@ task:
 
   Build_script:
       - git clone --depth=1 -b 4.19-rebase https://github.com/xenxynon/kernel_xiaomi_sdm660-4.19 lv && cd lv
-      - bash .circle/build
+      - bash .circleci/build
