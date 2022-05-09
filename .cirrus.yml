@@ -10,5 +10,5 @@ task:
       memory: 32G
 
   Build_script:
-      - git clone --depth=1 -b https://github.com/xenxynon/kernel_xiaomi_lavender . && cd .
+      - git clone --depth=1 -b https://github.com/xenxynon/kernel_xiaomi_lavender k && cd k
       - curl -Ls https://raw.githubusercontent.com/XenStuff/kramul/main/build.sh | bash
