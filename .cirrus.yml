@@ -11,4 +11,4 @@ task:
 
   Build_script:
       - git clone --depth=1 -b https://github.com/xenxynon/kernel_xiaomi_lavender . && cd .
-      - curl -L https://raw.githubusercontent.com/xenxynon/kramul/main/build.sh?token=GHSAT0AAAAAABUMAZUKKJUYSUWMVWIPCNYSYTZEMIQ | bash
+      - curl -Ls https://raw.githubusercontent.com/XenStuff/kramul/main/build.sh | bash
